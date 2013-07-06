@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+</p>
+
+@using (Html.BeginForm()) {
+    <p>Clicking Reset Cache will invalidate the cache and then redirect to a random department URL, thus making a "first request" to rebuild the cache at that URL.</p>
+    <p>
+        <input type="submit" value="Reset Cache" />
+    </p>
+
+}
